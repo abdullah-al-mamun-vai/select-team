@@ -1,8 +1,21 @@
 
+
+
+
+
+
+
 document.getElementById('per-player').addEventListener('click', function () {
     const budgetMoneyValueToNum = getInputID('budget-money')
     const budgetTotal = budgetMoneyValueToNum * 5;
-    getSet('player-total', budgetTotal);
+    if (isNaN(budgetMoneyValueToNum)) {
+        alert('please enter an valid input')
+
+    }
+    else {
+        getSet('player-total', budgetTotal);
+
+    }
 
 
 })
@@ -13,5 +26,11 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const getExpensesInner = getExpensesone.innerText;
     const getExpensesInnerToNum = parseInt(getExpensesInner);
     const finalTotal = getMangerMoney + getCoachmMoney + getExpensesInnerToNum;
-    getSet('total-cost', finalTotal)
+    if (isNaN(finalTotal)) {
+        alert('please enter an valid input')
+    }
+    else {
+        getSet('total-cost', finalTotal)
+
+    }
 })

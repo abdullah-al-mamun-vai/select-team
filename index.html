@@ -9,7 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        #player-add th {
+            background: transparent;
+            color: #fff;
+            padding-right: 0;
+        }
+
+        #player-add td {
+            background: transparent;
+            color: #fff;
+            text-transform: capitalize;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -38,107 +51,102 @@
                         <img src="image/player2.jpg" alt="Shoes" class="h-40 w-full " />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
+                        <h2 class="card-title capitalize" id="">Cristiano Ronaldo</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick=" getPlayerName( this)">select</button>
                         </div>
                     </div>
                 </div>
                 <div class="card bg-base-100 shadow-xl">
                     <figure class="">
-                        <img src="image/player2.jpg" alt="Shoes" class="rounded-xl w-full" />
+                        <img src="image/player1.jpg" alt="Shoes" class="h-40 w-full " />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
+                        <h2 class="card-title capitalize" id="">leonel messi</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="getPlayerName(this)" class="btn btn-primary"> select</button>
                         </div>
                     </div>
                 </div>
                 <div class="card bg-base-100 shadow-xl">
                     <figure class="">
-                        <img src="https://placeimg.com/400/225/arch" alt="Shoes" class="rounded-xl w-full" />
+                        <img src="image/player3.jpg" alt="Shoes" class="h-40 w-full " />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
+                        <h2 class="card-title capitalize" id="">neymar jr.</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="getPlayerName(this)" class="btn btn-primary">select </button>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="player-box">
-                    <div class="border">
-                        <img class="w-full h-4/12" src="image/player1.jpg" alt="">
-                        <div class="p-3 text-center bg-black">
-                            <h3 class="uppercase font-semibold text-xl text-white">leonal messi</h3>
-                            <p class="text-lg text-white">36 Goals <span>.</span> 120 Assist</p>
-                            <button
-                                class="uppercase w-full text-lg font-semibold text-white py-2 bg-blue-400 my-3">select</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="player-box">
-                    <div class="border">
-                        <img class="w-full h-4/12" src="image/player1.jpg" alt="">
-                        <div class="p-3 text-center bg-black">
-                            <h3 class="uppercase font-semibold text-xl text-white">leonal messi</h3>
-                            <p class="text-lg text-white">36 Goals <span>.</span> 120 Assist</p>
-                            <button
-                                class="uppercase w-full text-lg font-semibold text-white py-2 bg-blue-400 my-3">select</button>
-                        </div>
-                    </div>
-                </div> -->
+
+
             </div>
             <div class="bg-slate-800 py-10 px-10">
-                <h3 class="text-white text-xl text-center font-semibold">Selected - V</h3>
-                <ul class="list-decimal">
-                    <li class="mt-4 text-lg text-white ml-5">leonel Messi</li>
-                    <li class="mt-4 text-lg text-white ml-5">Kylian Ambappe</li>
-                    <li class="mt-4 text-lg text-white ml-5">Neymar Jr.</li>
-                    <li class="mt-4 text-lg text-white ml-5">kaylor navas</li>
-                    <li class="mt-4 text-lg text-white ml-5">Ronaldo </li>
-                    <p></p>
-                </ul>
+                <h3 class="text-white text-xl text-center font-semibold">Selected -<span id="player-length">V</span>
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="table bg-transparent">
+                        <!-- head -->
+
+                        <tbody id="player-add">
+                            <!-- row 1 -->
+                            <!-- <tr>
+                                <th></th>
+                                <td></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <!-- grid one  -->
-            <!-- <div class="grid grid-cols-3 col-span-3 gap-6">
-                <div class="player-box">
-                    <div class="border">
-                        <img class="w-full h-4/12" src="image/player1.jpg" alt="">
-                        <div class="p-3 text-center bg-black">
-                            <h3 class="uppercase font-semibold text-xl text-white">leonal messi</h3>
-                            <p class="text-lg text-white">36 Goals <span>.</span> 120 Assist</p>
-                            <button
-                                class="uppercase w-full text-lg font-semibold text-white py-2 bg-blue-400 my-3">select</button>
+            <div class="grid grid-cols-3 col-span-3 gap-6">
+                <div>
+                    <div class="card bg-base-100 shadow-xl">
+                        <figure class="">
+                            <img src="image/player4.jpg" alt="Shoes" class="h-40 w-full " />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title capitalize" id="">karim benzema</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button onclick="getPlayerName(this)" class="btn btn-primary w-full">select </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="player-box">
-                    <div class="border">
-                        <img class="w-full h-4/12" src="image/player1.jpg" alt="">
-                        <div class="p-3 text-center bg-black">
-                            <h3 class="uppercase font-semibold text-xl text-white">leonal messi</h3>
-                            <p class="text-lg text-white">36 Goals <span>.</span> 120 Assist</p>
-                            <button
-                                class="uppercase w-full text-lg font-semibold text-white py-2 bg-blue-400 my-3">select</button>
+                <div>
+                    <div class="card bg-base-100 shadow-xl">
+                        <figure class="">
+                            <img src="image/player5.jpg" alt="Shoes" class="h-40 w-full " />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title capitalize" id="">kylian mbappe</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button onclick="getPlayerName(this)" class="btn btn-primary">Select</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="player-box">
-                    <div class="border">
-                        <img class="w-full h-4/12" src="image/player1.jpg" alt="">
-                        <div class="p-3 text-center bg-black">
-                            <h3 class="uppercase font-semibold text-xl text-white">leonal messi</h3>
-                            <p class="text-lg text-white">36 Goals <span>.</span> 120 Assist</p>
-                            <button
-                                class="uppercase w-full text-lg font-semibold text-white py-2 bg-blue-400 my-3">select</button>
+                <div>
+                    <div class="card bg-base-100 shadow-xl">
+                        <figure class="">
+                            <img src="image/player6.webp" alt="Shoes" class="h-40 w-full " />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title capitalize" id="">robert lewandeski</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button onclick="getPlayerName(this)" class="btn btn-primary">select </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- grid two  -->
             <div class="bg-slate-800 py-10 px-10">
                 <h3 class="text-white text-xl text-center font-semibold">Budget</h3>
