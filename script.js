@@ -64,6 +64,7 @@ document.getElementById('per-player').addEventListener('click', function () {
 document.getElementById('calculate-total').addEventListener('click', function () {
     const getMangerMoney = getInputID('manager-money');
     const getCoachmMoney = getInputID('coach-money');
+    /*validation*/
     if (getMangerMoney < 0 || getCoachmMoney < 0) {
         alert('please input a valid number');
     }
