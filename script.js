@@ -48,7 +48,10 @@ document.getElementById('per-player').addEventListener('click', function () {
     const budgetTotal = budgetMoneyValueToNum * playerLength;
     /*validation*/
     if (isNaN(budgetMoneyValueToNum)) {
-        alert('please enter an valid input')
+        alert('please enter an valid input');
+    }
+    else if (budgetMoneyValueToNum < 0) {
+        alert('please input a valid number')
     }
     else {
         getSet('player-total', budgetTotal);
@@ -61,15 +64,21 @@ document.getElementById('per-player').addEventListener('click', function () {
 document.getElementById('calculate-total').addEventListener('click', function () {
     const getMangerMoney = getInputID('manager-money');
     const getCoachmMoney = getInputID('coach-money');
-    const getExpensesone = parseInt(getInner('player-total'));
-    const finalTotal = getMangerMoney + getCoachmMoney + getExpensesone;
-    /*validation*/
-    if (isNaN(finalTotal)) {
-        alert('please enter an valid input')
+    if (getMangerMoney < 0 || getCoachmMoney < 0) {
+        alert('please input a valid number');
     }
     else {
-        getSet('total-cost', finalTotal)
+        const getExpensesone = parseInt(getInner('player-total'));
+        const finalTotal = getMangerMoney + getCoachmMoney + getExpensesone;
+        /*validation*/
+        if (isNaN(finalTotal)) {
+            alert('please enter an valid input')
+        }
 
+        else {
+            getSet('total-cost', finalTotal)
+
+        }
     }
 })
 
