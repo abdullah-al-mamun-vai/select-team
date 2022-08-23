@@ -1,4 +1,4 @@
-
+/* player name get area start */
 function display(getAllPlayer) {
     const playerLoaction = document.getElementById('player-add');
     playerLoaction.innerHTML = '';
@@ -10,7 +10,7 @@ function display(getAllPlayer) {
         <td>${singlePlayer}</td>
         `
         if (i >= 5) {
-            alert('this');
+            alert('You have added five people');
             break;
 
         }
@@ -21,7 +21,7 @@ function display(getAllPlayer) {
     }
 
 }
-
+/* player name set area start */
 let array = [];
 
 function getPlayerName(element) {
@@ -31,17 +31,22 @@ function getPlayerName(element) {
     }
     array.push(playerObject)
     if (array.length >= 6) {
+
     }
     else {
         const totalPlayer = document.getElementById('player-length').innerText = array.length;
+        element.setAttribute('disabled', true);
 
     }
+
     display(array);
 }
+/* button click to calculate start */
 document.getElementById('per-player').addEventListener('click', function () {
     const budgetMoneyValueToNum = getInputID('budget-money')
     const playerLength = parseInt(getInner('player-length'))
     const budgetTotal = budgetMoneyValueToNum * playerLength;
+    /*validation*/
     if (isNaN(budgetMoneyValueToNum)) {
         alert('please enter an valid input')
     }
@@ -51,13 +56,14 @@ document.getElementById('per-player').addEventListener('click', function () {
 
 })
 
-
+/* button click to calculate start */
 
 document.getElementById('calculate-total').addEventListener('click', function () {
     const getMangerMoney = getInputID('manager-money');
     const getCoachmMoney = getInputID('coach-money');
     const getExpensesone = parseInt(getInner('player-total'));
     const finalTotal = getMangerMoney + getCoachmMoney + getExpensesone;
+    /*validation*/
     if (isNaN(finalTotal)) {
         alert('please enter an valid input')
     }
@@ -66,4 +72,4 @@ document.getElementById('calculate-total').addEventListener('click', function ()
 
     }
 })
-'player-length'
+

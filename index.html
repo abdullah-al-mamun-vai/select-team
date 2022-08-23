@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>this is Website</title>
+    <title>Accelerate your success in the transfer market</title>
+    <!-- daisyui connect  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
-
+    <!-- tailwindcss connect  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- some overwrite css  -->
     <style>
         #player-add th {
             background: transparent;
@@ -25,170 +27,208 @@
 
         }
     </style>
-
 </head>
 
 <body>
     <!-- header area start -->
     <header class="w-full bg-black p-44">
         <div class="text-center">
-            <h2 class="uppercase text-yellow-500 font-bold text-5xl">Select Your Best Five
+            <h2 class="uppercase text-yellow-500 font-bold text-5xl">Accelerate your success in the transfer market
             </h2>
-            <p class="capitalize text-yellow-500 w-6/12 mx-auto mt-12">Lorem ipsum dolor sit amet consectetur
-                adipisicing
-                elit. Ut molestias
-                sit rem quis
-                aliquid dolore quas
-                labore voluptates aliquam autem.</p>
+            <p class="capitalize text-yellow-500 w-6/12 mx-auto mt-12">We empower football clubs, agents and players to
+                be successful in the transfer market by giving them real-time market intelligence and direct access to a
+                global network of decision makers.</p>
         </div>
 
     </header>
     <!-- header area end -->
     <!-- player area start  -->
-    <main class=" bg-slate-600">
+    <main class="bg-zinc-900">
         <section class="grid grid-cols-4 py-16 container mx-auto px-4 gap-6">
             <div class="grid grid-cols-3 col-span-3 gap-6">
                 <!-- card area start  -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 rounded-none  shadow-xl">
                     <figure class="">
                         <img src="image/player2.jpg" alt="Shoes" class="h-40 w-full " />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title capitalize" id="">Cristiano Ronaldo</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="capitalize text-sm">33 Goals<span class="mx-2">.</span>43 Asisst</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary" onclick=" getPlayerName( this)">select</button>
+                            <button class="btn btn-wide bg-black text-yellow-400"
+                                onclick=" getPlayerName( this)">select</button>
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 rounded-none shadow-xl">
                     <figure class="">
                         <img src="image/player1.jpg" alt="Shoes" class="h-40 w-full " />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title capitalize" id="">leonel messi</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="capitalize text-sm">270 Goals<span class="mx-2">.</span>42 Asisst</p>
                         <div class="card-actions">
-                            <button onclick="getPlayerName(this)" class="btn btn-primary"> select</button>
+                            <button onclick="getPlayerName(this)" class="btn btn-wide bg-black text-yellow-400">
+                                select</button>
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 rounded-none shadow-xl">
                     <figure class="">
                         <img src="image/player3.jpg" alt="Shoes" class="h-40 w-full " />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title capitalize" id="">neymar jr.</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="capitalize text-sm">70 Goals<span class="mx-2">.</span>3 Asisst</p>
                         <div class="card-actions">
-                            <button onclick="getPlayerName(this)" class="btn btn-primary">select </button>
+                            <button onclick="getPlayerName(this)"
+                                class="btn btn-wide bg-black text-yellow-400">select</button>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-            <div class="bg-slate-800 py-10 px-10">
+            <!-- carde first end -->
+            <!-- player select area start  -->
+            <div class="bg-black py-10 px-10">
                 <h3 class="text-white text-xl text-center font-semibold">Selected -<span id="player-length">0</span>
                 </h3>
                 <div class="overflow-x-auto">
                     <table class="table bg-transparent">
-                        <!-- head -->
-
                         <tbody id="player-add">
-                            <!-- row 1 -->
-                            <!-- <tr>
-                                <th></th>
-                                <td></td>
-                            </tr> -->
                         </tbody>
                     </table>
                 </div>
             </div>
-            <!-- grid one  -->
+            <!-- player select area end    -->
+            <!--card area two  -->
             <div class="grid grid-cols-3 col-span-3 gap-6">
                 <div>
-                    <div class="card bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 rounded-none shadow-xl">
                         <figure class="">
-                            <img src="image/player4.jpg" alt="Shoes" class="h-40 w-full " />
+                            <img src="image/player5.webp" alt="Shoes" class="h-40 w-full " />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title capitalize" id="">karim benzema</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="capitalize text-sm">40 Goals<span class="mx-2">.</span>2 Asisst</p>
                             <div class="card-actions">
-                                <button onclick="getPlayerName(this)" class="btn btn-primary w-full">select </button>
+                                <button onclick="getPlayerName(this)"
+                                    class="btn btn-wide bg-black text-yellow-400">select
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="card bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 rounded-none shadow-xl">
                         <figure class="">
                             <img src="image/player5.jpg" alt="Shoes" class="h-40 w-full " />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title capitalize" id="">kylian mbappe</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p class="capitalize text-sm">70 Goals<span class="mx-2">.</span>40 Asisst</p>
                             <div class="card-actions">
-                                <button onclick="getPlayerName(this)" class="btn btn-primary">Select</button>
+                                <button onclick="getPlayerName(this)"
+                                    class="btn btn-wide bg-black text-yellow-400">Select</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="card bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 rounded-none shadow-xl">
                         <figure class="">
                             <img src="image/player6.webp" alt="Shoes" class="h-40 w-full " />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title capitalize" id="">robert lewandeski</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <h2 class="card-title capitalize" id="">Robert Lewandowski</h2>
+                            <p class="capitalize text-sm">30 Goals<span class="mx-2">.</span>23 Asisst</p>
                             <div class="card-actions">
-                                <button onclick="getPlayerName(this)" class="btn btn-primary">select </button>
+                                <button onclick="getPlayerName(this)"
+                                    class="btn btn-wide bg-black text-yellow-400">select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-base-100 rounded-none shadow-xl">
+                        <figure class="">
+                            <img src="image/player7.jpg" alt="Shoes" class="h-40 w-full " />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title capitalize" id="">Di Maria</h2>
+                            <p class="capitalize text-sm">50 Goals<span class="mx-2">.</span>3 Asisst</p>
+                            <div class="card-actions">
+                                <button onclick="getPlayerName(this)"
+                                    class="btn btn-wide bg-black text-yellow-400">select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-base-100 rounded-none shadow-xl">
+                        <figure class="">
+                            <img src="image/player8.jpg" alt="Shoes" class="h-40 w-full " />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title capitalize" id="">james rodriguez</h2>
+                            <p class="capitalize text-sm">55 Goals<span class="mx-2">.</span>7 Asisst</p>
+                            <div class="card-actions">
+                                <button onclick="getPlayerName(this)"
+                                    class="btn btn-wide bg-black text-yellow-400">select
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- grid two  -->
-            <div class="bg-slate-800 py-10 px-10">
-                <h3 class="text-white text-xl text-center font-semibold">Budget</h3>
-                <div class="flex mt-3 justify-between">
-                    <p class="text-white capitalize text-lg ">per player</p>
-                    <input class="w-6/12 ml-3 bg-transparent py-2 text-white px-1 outline-none border border-bg-slate"
-                        type="text" name="" id="budget-money">
-                </div>
+            <!-- calculate area start two  -->
+            <div>
+                <div class="bg-black py-10 px-10">
+                    <h3 class=" text-white text-xl text-center font-semibold rounded">Budget</h3>
+                    <div class="flex mt-3 justify-between">
+                        <p class="text-white capitalize text-lg ">per player</p>
+                        <input
+                            class="w-6/12 ml-3 bg-transparent py-2 text-white px-1 outline-none border border-bg-slate"
+                            type="text" name="" id="budget-money">
+                    </div>
 
-                <button id="per-player" class="w-full bg-blue-500 uppercase my-3 py-2 text-white">claculate</button>
-                <div class="flex justify-between">
-                    <p class="text-white capitalize text-lg">player expenses</p>
-                    <p class="text-white ml-4 text-lg">$<span id="player-total">00</span></p>
-                </div>
-                <div class="flex mt-3 justify-between">
-                    <p class="text-white capitalize text-lg ">Manager</p>
-                    <input class="w-6/12 ml-3 bg-transparent py-2 text-white px-1 outline-none border border-bg-slate"
-                        type="text" name="" id="manager-money">
-                </div>
-                <div class="flex mt-3 justify-between">
-                    <p class="text-white capitalize text-lg ">coach</p>
-                    <input class="w-6/12 ml-3 bg-transparent py-2 text-white px-1 outline-none border border-bg-slate"
-                        type="text" name="" id="coach-money">
-                </div>
-                <button class="w-full bg-blue-500 uppercase my-3 py-2 text-white" id="calculate-total">claculate
-                    total</button>
-                <div class="flex justify-between">
-                    <p class="text-white capitalize text-lg">Total</p>
-                    <p class="text-yellow-400 ml-4 text-lg">$<span id="total-cost">00</span></p>
+                    <button id="per-player"
+                        class="w-full bg-white  uppercase my-3 py-2 text-black font-semibold rounded">calculate</button>
+                    <div class=" flex justify-between">
+                        <p class="text-white capitalize text-lg">player expenses</p>
+                        <p class="text-white ml-4 text-lg">$<span id="player-total">00</span></p>
+                    </div>
+                    <div class="flex mt-3 justify-between">
+                        <p class="text-white capitalize text-lg ">Manager</p>
+                        <input
+                            class="w-6/12 ml-3 bg-transparent py-2 text-white px-1 outline-none border border-bg-slate"
+                            type="text" name="" id="manager-money">
+                    </div>
+                    <div class="flex mt-3 justify-between">
+                        <p class="text-white capitalize text-lg ">coach</p>
+                        <input
+                            class="w-6/12 ml-3 bg-transparent py-2 text-white px-1 outline-none border border-bg-slate"
+                            type="text" name="" id="coach-money">
+                    </div>
+                    <button class="w-full bg-white font-semibold uppercase my-3 py-2 text-black rounded"
+                        id="calculate-total">calculate
+                        total</button>
+                    <div class="flex justify-between">
+                        <p class="text-white capitalize text-lg">Total</p>
+                        <p class="text-yellow-400 ml-4 text-lg">$<span id="total-cost">00</span></p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <!-- footer area start  -->
-    <footer class="border-t border-bg-gray bg-slate-600 py-16">
-        <p class="text-center text-lg">Copyright @ 2022 All Rights Reserved.
+    <footer class="border-t border-bg-gray bg-black py-16">
+        <p class="text-center text-lg text-yellow-400">Copyright @ 2022 All Rights Reserved.
         </p>
     </footer>
     <!-- player area end  -->
+    <!-- script fine added  -->
     <script src="utilities.js"></script>
     <script src="script.js"></script>
 </body>
